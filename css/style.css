@@ -1,0 +1,421 @@
+html,
+body {
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    height: 100%;
+    color: #333;
+    background: #fff;
+}
+
+h1#name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10rem;
+    font-weight: bold;
+    z-index: 2;
+    color: #000000;
+}
+
+h2#undername {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+div#headshot-wrapper {
+    border: solid #FFFFFF 0;
+    border-radius: 50%;
+    padding: 0;
+    width: fit-content;
+    height: auto;
+    background: #FFFFFF;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /* exact value is given through JavaScript */
+    overflow: auto;
+}
+
+.row-spacer {
+    max-height: 5vw;
+    height: 0;
+
+}
+
+.content-block.half {
+    max-height: 5vh;
+    min-height: 0;
+}
+
+/* nav bar */
+
+nav {
+    text-align: center;
+    user-select: none;
+}
+
+ul.nav {
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-align: center;
+    display: inline-block;
+}
+
+ul.nav li {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 5px 5px;
+    padding: 0;
+    border: 3px solid #000000;
+    border-radius: 3px;
+    text-align: center;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+}
+
+li {
+    line-height: 1.4;
+}
+
+ul.nav li a {
+    display: inline-block;
+    padding: 6px 8px;
+    color: #000000;
+    border-color: #000000;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition-duration: 0.3s;
+    transition-property: color, text-decoration;
+}
+
+ul.nav li:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+ul.nav li a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+div.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.nametag p.comments {
+    font-size: 5vw;
+    display: inline-block;
+    text-align: center;
+}
+
+.spacer {
+    height: 10vh;
+}
+
+.big-heading {
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.content-block {
+    padding-top: 3%;
+    text-align: center;
+    padding-bottom: 3%;
+    margin: 0;
+    padding: 3vh 0 3vh 0;
+}
+
+div.content-block.dark#header {
+    background-image: url(../assets/halftone-yellow.png);
+    background-repeat: repeat;
+    padding-bottom: 3%;
+    user-select: none;
+    min-height: 60vh;
+}
+
+.center {
+    text-align: center;
+}
+
+.well h3 a {
+    background: #FDDF7A;
+    border-radius: 3px;
+    border: none;
+    color: #333;
+    display: block;
+    font-family: Source Code Pro, monospace;
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 6px 10px;
+    text-align: left;
+    text-decoration: none;
+    user-select: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.7s;
+
+}
+
+@keyframes link-hover {
+    from { background-color: #333; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+    to {background-color: rgb(26, 26, 26); box-shadow: none;}
+
+}
+
+.well h3 a:hover {
+    background-color: rgb(252, 215, 96);
+    box-shadow: none;
+}
+
+div.well {
+    padding: 0 20px 0 20px;
+    margin-bottom: 3vw;
+
+}
+
+.left {
+    text-align: left;
+}
+
+.well-text {
+    text-align: left;
+}
+
+.well-text p {
+    margin: 2vh 0px 2vh 5px;
+}
+
+.well-text code {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1rem;
+    background: #eff2f7;
+    border-radius: 3px;
+    padding: 3px 5px;
+    line-height: 20px;
+    color: #333;
+}
+
+.content-block p.comments {
+    margin: 2vh 0 2vh 0;
+}
+
+p.comments {
+    font-size: 3vw;
+}
+
+div.content-block.light {
+    color: #333;
+    background: #fff;
+    margin: 0;
+}
+
+div.container-light {
+    padding: 5em;
+    background-image: url(../assets/halftone-yellow.png);
+    background-repeat: repeat;
+    margin: 0;
+}
+
+div.content-block.light div.well {
+    color: #333;
+}
+
+div.content-block.light div.well-text {
+    color: #333;
+}
+
+div.content-block.dark {
+    color: #fff;
+    background-image: url(../assets/halftone-yellow.png);
+    background-repeat: repeat;
+    margin: 0;
+}
+
+.parallax {
+    /* The image used is from subtlepatterns.com*/
+    background-image: url(../assets/halftone-yellow.png);
+    /* Full height */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+code.dark {
+    color: white;
+    background: none;
+    user-select: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+code {
+    user-select: none;
+}
+
+a.black-link {
+    color: #333;
+    text-decoration: underline;
+}
+
+a.black-link:hover {
+    color: #666;
+}
+
+footer {
+    color: #333;
+    background: #333;
+    margin: 0;
+    text-align: center;
+    padding-top: 1%;
+    padding: 0;
+}
+
+footer p {
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.85em;
+    display: inline-block;
+    text-align: center;
+    margin-right: 3%;
+}
+
+footer a {
+    color: #000000;
+}
+
+footer a:hover {
+    color: rgb(78, 78, 78);
+}
+
+.well p {
+    font-size: 3.5vw;
+}
+
+#projects-container {
+    padding: 0 10% 0 10%;
+}
+
+.title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content-block.half {
+    max-height: 50%;
+    min-height: 0;
+}
+
+p.contact {
+    color: black;
+    font-size: 36px;
+}
+
+p.contact a {
+    color: black;
+    font-size: 36px;
+}
+
+div.content-block.dark div.well h3 a  {
+    background: #ffffff;
+    color: #333;
+}
+
+div.content-block.dark div.well p {
+    color: #000000;
+}
+
+code.dark {
+    background: rgb(46, 46, 46);
+}
+
+@media only screen and (max-width: 460px) {
+    h1#name {
+        font-size: 15vw;
+    }
+
+    h2#undername {
+        font-size: 8vw;
+    }
+
+    img#headshot {
+        width: 60vw;
+    }
+
+    div#headshot-wrapper {
+        margin-left: 20vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    ul.nav li a {
+        font-size: 5vw;
+        line-height: 1;
+    }
+
+    ul.nav li {
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
+    }
+
+    div#footer {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .big-heading {
+        font-size: 5em;
+    }
+
+    .well h3 a {
+        font-size: 1.5rem;
+    }
+
+    .well p {
+        font-size: 1.4rem;
+    }
+
+    p.comments {
+        font-size: 1.9rem;
+    }
+
+    .row-spacer {
+        height: 5vh;
+    }
+
+    div.well {
+        min-height: 10vw;
+    }
+
+    div.content-block {
+        min-height: fit-content;
+
+    }
+
+    code {
+        font-size: 1.3rem;
+    }
+}

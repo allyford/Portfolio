@@ -31,7 +31,10 @@ function togglePopup(element) {
 	}
 
 	document.getElementById("p-title").innerText = project.title;
+	document.getElementById("p-date").innerText = project.date;
 	document.getElementById("p-info").innerText = project.longDescription;
-	document.getElementById("p-link").attributes['href'] = project.link;
+	console.log(project.link);
+	console.log(document.getElementById("p-link").attributes['href']);
+	document.getElementById("p-link").setAttribute('href', project.link);
 	document.getElementById("p-link").innerText = project.linkText;
 }

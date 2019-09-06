@@ -4,12 +4,15 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<script type="text/javascript" src="projects.js" ></script>
+
 		<!-- favicon -->
 		<link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
 		<!-- custom external CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- font from Google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<!-- Bootstrap CSS -->
 		<link
 			rel="stylesheet"
@@ -21,7 +24,20 @@
 	</head>
 
 	<body>
+
 		<div class="container-fluid">
+				<div id="popup-wrapper" style="display: none">
+					<div id="popup">
+						<h1 id="p-title">
+							Project name
+						</h1>
+						<h4 id="p-date">August 2019</h4>
+						<a id="p-link" href="#">link</a>
+						<br><br>
+						<p id="p-info">detailled info about the project</p>
+						<a onclick="togglePopup()" class="close"></a>
+					</div>
+					</div>
 			<div id="header" class="content-block dark parallax">
 				<div class="row align-items-center no-gutters">
 					<div class="col-lg-8 col-sm-12 order-sm-last order-lg-first order-md-last">
@@ -65,7 +81,7 @@
 					<div class="col-md-4">
 						<div class="well">
 							<h3 class="center">
-								<a href="https://github.com/alexweininger/android-catan">Kataluna Horsemanship</a>
+								<a id="sample" onclick="togglePopup(this)">Kataluna Horsemanship</a>
 							</h3>
 							<div class="well-text">
 								<p>the famous Settlers of Catan game built into a responsive android app</p>
@@ -75,7 +91,7 @@
 					<div class="col-md-4">
 						<div class="well">
 							<h3 class="center">
-								<a href="https://github.com/alexweininger/recent-pdfs">Servicemark</a>
+								<a onclick="togglePopup()">Servicemark</a>
 							</h3>
 							<div class="well-text">
 								<p>a chrome extension allowing easy access to recently viewed pdf files</p>
@@ -85,7 +101,7 @@
 					<div class="col-md-4">
 						<div class="well">
 							<h3 class="center">
-								<a href="https://github.com/alexweininger/dodging-game">Grand Meridian Cinema</a>
+								<a onclick="togglePopup()">Grand Meridian Cinema</a>
 							</h3>
 							<div class="well-text">
 								<p>a small work-in-progress game that I used to learn html canvas</p>
